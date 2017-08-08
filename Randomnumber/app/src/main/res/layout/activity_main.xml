@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bdxj86.randomnumber.MainActivity">
+
+    <EditText
+        android:id="@+id/guessEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="139dp"
+        android:ems="10"
+        android:hint="Enter the Number"
+        android:inputType="textPersonName|number" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"
+        android:text="Can You Guess it ?"
+        android:layout_alignBottom="@+id/guessEditText"
+        android:layout_alignStart="@+id/guessEditText"
+        android:layout_marginBottom="55dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView5"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="46dp"
+        android:onClick="guess"
+        android:text="Button" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I am thinking to put value between 1 to 10?"
+        android:textSize="10dp"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginBottom="38dp" />
+
+</RelativeLayout>
